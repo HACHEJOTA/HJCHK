@@ -8,10 +8,12 @@ return console.log('La página no esta funcionando actualmente')
 return response.json()
 }).then(data => {
 const formattedResult = `
- DNI: ${text}
-NOMBRE: ${data.nombres}
-APELLIDO PATERNO: ${data.apellidoPaterno}
-APELLIDO MATERNO: ${data.apellidoMaterno}
+🔰 |*DNI:* ${text}
+🎯|*NOMBRE:* ${data.nombres}
+🔴|*APELLIDO PATERNO:* ${data.apellidoPaterno}
+📊|*APELLIDO MATERNO:* ${data.apellidoMaterno}
+
+>BY 😎 HACHEJOTA😎
 `
 m.reply(formattedResult.trim())
 }).catch(error => {
