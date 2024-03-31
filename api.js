@@ -7,13 +7,13 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-/* Para agregar más APIs asegurate de poner global.apiname = ['APIKey'] */ /* By Skid 🤑 */
+/* si quieres modificar esto y agregarr mas apis asegurate poner global.tuapi = ['apikey']  s 🤑 */
 
 global.openai_key = 'sk-0';
-/* Obtén tu API Key en este enlace: https://platform.openai.com/account/api-keys */
+/* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
 
 global.openai_org_id = 'org-3';
-/* Obtén tu ID de organización en este enlace: https://platform.openai.com/account/org-settings */
+/* Consigue tu ID de organizacion en este enlace: https://platform.openai.com/account/org-settings */
 
 
 global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f'];
@@ -26,7 +26,6 @@ global.lolkeysapi = ['GataDios']; // ['BrunoSobrino_2']
 global.itsrose = ['4b146102c4d500809da9d1ff'];
 
 global.APIs = {
-  CFROSAPI: 'https://api.cafirexos.com',
   xteam: 'https://api.xteam.xyz',
   dzx: 'https://api.dhamzxploit.my.id',
   lol: 'https://api.lolhuman.xyz',
@@ -138,7 +137,7 @@ global.rpg = {
       kambing: '🐐 Cabra',
       kerbau: '🐃 Búfalo',
       lion: '🦁 León',
-      money: '👾 MysticCoins',
+      money: '👾 HachikocCoins',
       monyet: '🐒 Mono',
       panda: '🐼 Panda',
       snake: '🐍 Serpiente',
@@ -231,7 +230,7 @@ global.rpgg = { // Solo emojis
       kambing: '🐐',
       kerbau: '🐃',
       lion: '🦁',
-      money: '👾',
+      money: '🐶',
       monyet: '🐒',
       panda: '🐼',
       snake: '🐍',
@@ -262,8 +261,8 @@ global.rpgshop = { // Tienda
       berlian: '♦️ Joya',
       kyubi: '🌀 Magia',
       gold: '👑 Oro',
-      money: '👾 MysticCoins',
-      tiketcoin: '🎫 mystic Tickers',
+      money: '🐶 HachikoCoins',
+      tiketcoin: '🎫 Hachiko Tickers',
       stamina: '✨ Energía',
       potion: '🥤 Poción',
       aqua: '💧 Agua',
@@ -339,7 +338,7 @@ global.rpgshopp = { // Tienda
       berlian: '♦️',
       kyubi: '🌀',
       gold: '👑',
-      money: '👾',
+      money: '🐶',
       tiketcoin: '🎫',
       stamina: '✨',
       potion: '🥤',
@@ -408,6 +407,7 @@ global.rpgshopp = { // Tienda
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
   unwatchFile(file);
-  console.log(chalk.redBright('Update \'api.js\''));
+  console.log(chalk.redBright('Update \'config.js\''));
   import(`${file}?update=${Date.now()}`);
 });
+      
