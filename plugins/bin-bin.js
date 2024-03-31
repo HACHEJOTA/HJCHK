@@ -9,16 +9,16 @@ return console.log('La página no esta funcionando actualmente')
 return response.json()
 }).then(data => {
 const formattedResult = `
-📇| *BIN*: ${text}
-💳| *MARCA*: ${data.scheme}
-🏧| *TIPO*: ${data.type}
-🌐| *PAIS*: ${data.country.name}
-🏁| *BANDERA*: ${data.country.emoji}
-🏦| *BANCO*: ${data.bank.name}
+📇| BIN: ${text}
+💳| MARCA: ${data.scheme}
+🏧| TIPO: ${data.type}
+🌐| PAIS: ${data.country.name}
+🏁| BANDERA: ${data.country.emoji}
+🏦| BANCO: ${data.bank.name}
 `
 m.reply(formattedResult.trim())
 }).catch(error => {
-m.reply('Ingrese un Bin válido porfavor.'
+console.error('Error:', error)
 })
 }
 handler.command = /^(bin|card)$/i
